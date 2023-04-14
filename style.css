@@ -308,7 +308,7 @@ html {
 /* Section 2 */
 .section-2 {
   width: 100%;
-  height: 100vh;
+  height: 120vh;
   background-color: #222020;
   display: flex;
   align-items: center;
@@ -417,6 +417,10 @@ html {
   display: flex;
   align-items: center;
   padding-left: 10rem;
+}
+
+.swiper-container {
+  overflow: hidden;
 }
 
 .pricing-cards-wrapper {
@@ -588,7 +592,7 @@ html {
 /* Section 4 */
 .section-4 {
   width: 100%;
-  height: 100vh;
+  height: auto;
   background-color: #171718;
   display: flex;
   align-items: center;
@@ -743,6 +747,170 @@ html {
 @media screen and (max-width: 1500px) {
   .section-heading-line {
     display: none;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  html {
+    font-size: 45%;
+  }
+
+  .banner-heading span {
+    font-size: 10rem;
+  }
+
+  .banner-paragraph {
+    width: 45rem;
+    font-size: 3rem;
+  }
+
+  .section-2,
+  .section-3,
+  .section-4 {
+    flex-direction: column;
+  }
+
+  .video-wrapper {
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80rem;
+  }
+
+  .section-2-paragraph {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80rem;
+  }
+
+  .section-3 {
+    height: auto;
+    padding: 5rem 0 10rem 0;
+  }
+
+  .section-3 .section-heading {
+    margin-bottom: 7rem;
+  }
+
+  .swiper-container {
+    width: 100%;
+  }
+
+  .section-4 {
+    padding: 5rem 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 40%;
+  }
+
+  .banner {
+    top: 25%;
+  }
+
+  .banner-heading {
+    height: 15rem;
+  }
+
+  .banner-heading span {
+    font-size: 8rem;
+  }
+
+  .section-2 {
+    height: 100vh;
+  }
+
+  .footer {
+    padding: 0 5rem;
+  }
+
+  .footer-nav a {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  html {
+    font-size: 35%;
+  }
+
+  .contact-details div {
+    margin: 3rem 2rem;
+  }
+
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .footer-nav {
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 30%;
+  }
+
+  .banner-heading span {
+    font-size: 4.5rem;
+    letter-spacing: 2rem;
+  }
+
+  @keyframes animateHeading {
+    0% {
+      transform: translateZ(8rem);
+      opacity: 0;
+      letter-spacing: 2rem;
+    }
+
+    3% {
+      transform: translateZ(0);
+      opacity: 1;
+      letter-spacing: 1rem;
+    }
+
+    25% {
+      transform: translateZ(0);
+      opacity: 1;
+      letter-spacing: 1rem;
+    }
+
+    28% {
+      transform: translateZ(8rem);
+      opacity: 0;
+      letter-spacing: 2rem;
+    }
+
+    100% {
+      transform: translateZ(8rem);
+      opacity: 0;
+      letter-spacing: 2rem;
+    }
+  }
+
+  .video-wrapper {
+    width: 60rem;
+  }
+
+  .section-2 {
+    height: 80vh;
+  }
+
+  .section-2-paragraph {
+    width: 60rem;
+  }
+
+  .contact-details div {
+    width: 18rem;
+    margin: 3rem 1rem;
+  }
+
+  .contact-form {
+    width: 60rem;
   }
 }
 /* End of responsive */
