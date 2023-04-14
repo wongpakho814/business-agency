@@ -39,3 +39,19 @@ video.addEventListener("timeupdate", () => {
   }
 });
 // End of section 2 video
+
+// Section 3 pricing cards
+var swiper = new Swiper(".swiper-container", {
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  coverflowEffect: {
+    rotate: 70,
+    stretch: 0,
+    depth: 100,
+    modifier: 1,
+    slideShadows: true,
+  }
+});
+// End of section 3 pricing cards

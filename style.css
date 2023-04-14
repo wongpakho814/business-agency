@@ -13,6 +13,20 @@ html {
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
+
+.section-heading {
+  font-family: "Oswald", sans-serif;
+  font-size: 10rem;
+  font-weight: 300;
+  color: #ddd;
+  margin-right: 4rem;
+}
+
+.section-heading-line {
+  width: 15rem;
+  height: 0.2rem;
+  background-color: #ddd;
+}
 /* End of Common Styles */
 
 /* Navbar */
@@ -31,7 +45,7 @@ html {
 @keyframes animateNavbar {
   0% {
     top: -8rem;
-  }  
+  }
 
   100% {
     top: 0;
@@ -298,27 +312,13 @@ html {
   background-color: #222020;
   display: flex;
   align-items: center;
-  padding: 0 10rem;  
+  padding: 0 10rem;
   position: relative;
-}
-
-.section-heading {
-  font-family: "Oswald", sans-serif; 
-  font-size: 10rem;
-  font-weight: 300;
-  color: #ddd; 
-  margin-right: 4rem;
-}
-
-.section-heading-line {
-  width: 15rem;
-  height: 0.2rem;
-  background-color: #ddd; 
 }
 
 .video-wrapper {
   width: 70rem;
-  height: 35rem;  
+  height: 35rem;
   position: absolute;
   top: 5rem;
   right: 15rem;
@@ -329,8 +329,8 @@ html {
 .video {
   width: 100%;
   height: 100%;
-  object-fit: cover; 
-  opacity: 0.3; 
+  object-fit: cover;
+  opacity: 0.3;
   transition: opacity 0.3s;
 }
 
@@ -338,7 +338,7 @@ html {
   width: 100%;
   position: absolute;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.7);  
+  background-color: rgba(0, 0, 0, 0.7);
   transform: translateY(calc(100% - 0.4rem));
   transition: transform 0.4s;
 }
@@ -353,36 +353,36 @@ html {
   background-color: #000;
   position: absolute;
   top: 0;
-  left: 0;  
+  left: 0;
 }
 
 .video-bar {
   height: 100%;
   width: 0;
-  background-color: #d30819;  
+  background-color: #d30819;
   transition: width 0.2s linear;
 }
 
 .buttons {
-  padding: 2rem 1rem 1rem 1rem;  
+  padding: 2rem 1rem 1rem 1rem;
 }
 
 .buttons button {
   background: none;
   border: none;
-  cursor: pointer;  
+  cursor: pointer;
 }
 
 .buttons i {
   font-size: 2.8rem;
-  color: #fff;  
+  color: #fff;
 }
 
 .section-2-paragraph {
   width: 70rem;
   position: absolute;
   bottom: 0;
-  right: 15rem;  
+  right: 15rem;
   font-size: 2rem;
   color: #ddd;
   border-top: 0.3rem double #aaa;
@@ -398,13 +398,189 @@ html {
 }
 
 .fa-quote-left {
-  align-self: flex-start;  
+  align-self: flex-start;
   font-size: 5rem;
   margin-bottom: 2rem;
 }
 
 .fa-quote-right {
   align-self: flex-end;
-  font-size: 5rem; 
+  font-size: 5rem;
 }
 /* End of section 2 */
+
+/* Section 3 */
+.section-3 {
+  width: 100%;
+  height: 100vh;
+  background-color: #03070e;
+  display: flex;
+  align-items: center;
+  padding-left: 10rem;
+}
+
+.pricing-cards-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5rem;
+}
+
+.pricing-card {
+  width: 28rem !important;
+  height: 45rem !important;
+  background-color: #181b1d;
+  border-radius: 1rem;
+  box-shadow: 2rem 2rem 6rem rgba(0, 0, 0, 0.7);
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+}
+
+.pricing-card-front {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pricing-card-heading {
+  font-size: 2rem;
+  font-weight: 300;
+  color: #fff;
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+}
+
+.heading-free {
+  background: linear-gradient(to right, #087285, #0da5d3);
+  border-radius: 1rem 1rem 0 0;
+}
+
+.heading-basic {
+  background: linear-gradient(to right, #946809, #bdba0e);
+  border-radius: 1rem 1rem 0 0;
+}
+
+.heading-standard {
+  background: linear-gradient(to right, #a10c14, #e23b3b);
+  border-radius: 1rem 1rem 0 0;
+}
+
+.heading-premium {
+  background: linear-gradient(to right, #0b7e48, #3be286);
+  border-radius: 1rem 1rem 0 0;
+}
+
+.pricing-card-price {
+  font-family: "MADE Soulmaze";
+  font-size: 7rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+.pricing-card-list li {
+  margin-bottom: 0.5rem;
+}
+
+.list-free li {
+  color: #0da5d3;
+}
+
+.list-basic li {
+  color: #bdba0e;
+}
+
+.list-standard li {
+  color: #e23b3b;
+}
+
+.list-premium li {
+  color: #3be286;
+}
+
+.pricing-card-list i {
+  font-size: 1.8rem;
+  width: 3rem;
+}
+
+.pricing-card-list span {
+  font-size: 1.8rem;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+}
+
+.pricing-card-btn {
+  width: 18rem;
+  height: 5rem;
+  margin-bottom: 3rem;
+  border-radius: 3rem;
+  border: none;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.5);
+}
+
+.btn-free {
+  background-color: #0da5d3;
+}
+
+.btn-basic {
+  background-color: #bdba0e;
+}
+
+.btn-standard {
+  background-color: #e23b3b;
+}
+
+.btn-premium {
+  background-color: #3be286;
+}
+
+.pricing-card-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: rotateY(180deg);
+}
+
+.back-free {
+  background: linear-gradient(to right, #087285, #0da5d3);
+}
+
+.back-basic {
+  background: linear-gradient(to right, #946809, #bdba0e);
+}
+
+.back-standard {
+  background: linear-gradient(to right, #a10c14, #e23b3b);
+}
+
+.back-premium {
+  background: linear-gradient(to right, #0b7e48, #3be286);
+}
+
+.pricing-card-back a {
+  font-size: 2.5rem;
+  color: #fff;
+}
+/* End of section 3 */
